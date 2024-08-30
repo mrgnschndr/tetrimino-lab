@@ -1,0 +1,8 @@
+/* for O piece, move bottom row up to top, then row-reverse */
+#piece-o div:last-child {
+    flex-direction: row-reverse;
+}
+
+#piece-o > .tet-group:last-child {
+    order: -1;
+}
