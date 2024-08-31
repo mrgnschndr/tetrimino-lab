@@ -3,7 +3,7 @@
     flex-direction: row-reverse;
 }
 
-#piece-o > .tet-group:last-child {
+#piece-o .tet-group:last-child {
     order: -1;
 }
 
@@ -30,18 +30,26 @@
 
 /* for S piece, order 1st row correctly, then change order of parent tet-group rows */
 /* order 1st row correctly */
-/* #piece-s div:first-child div:nth-child(2) {
+#piece-s div:first-child div:nth-child(2) {
     order: 1;
 }
 
 #piece-s div:first-child div:first-child {
     order: 2;
 }
- 
+
 #piece-s div:first-child div:nth-child(4), #piece-s div:first-child div:nth-child(5) {
     order: 3;
-} */
+}
 /* change order of parent tet-group rows */
+#piece-s .tet-group:first-child {
+    order: 1;
+}
+
+#piece-s .tet-group:last-child {
+    order: 2;
+}
+
 
 /* for Z piece, row-reverse order of last row, then correct order of 1st row, then move before last row */
 #piece-z div:last-child div:nth-child(3) {
