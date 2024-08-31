@@ -6,3 +6,25 @@
 #piece-o > .tet-group:last-child {
     order: -1;
 }
+
+/* for I piece, using order to change last 3 rows */
+#piece-i div:nth-child(3) div:nth-child(3) {
+    order: 2;
+}
+/* 3rd row */
+#piece-i div:nth-child(3) div:first-child, #piece-i div:nth-child(3) div:nth-child(2), #piece-i div:nth-child(3) div:nth-child(4) {
+    order: 1;
+}
+
+#piece-i div:nth-child(3) div:nth-child(5) {
+    order: 3;
+}
+/* 4th row */
+#piece-i div:nth-child(4) {
+    flex-direction: row-reverse;
+}
+
+/* 5th row */
+#piece-i div:nth-child(5) div:nth-child(2), #piece-i div:nth-child(5) div:nth-child(3), #piece-i div:nth-child(5) div:nth-child(4) {
+    order: -1;
+}
