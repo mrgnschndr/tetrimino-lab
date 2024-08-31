@@ -23,8 +23,36 @@
 #piece-i div:nth-child(4) {
     flex-direction: row-reverse;
 }
-
 /* 5th row */
 #piece-i div:nth-child(5) div:nth-child(2), #piece-i div:nth-child(5) div:nth-child(3), #piece-i div:nth-child(5) div:nth-child(4) {
     order: -1;
 }
+
+/* for S piece, order 1st row correctly, then change order of parent tet-group rows */
+/* order 1st row correctly */
+/* #piece-s div:first-child div:nth-child(2) {
+    order: 1;
+}
+
+#piece-s div:first-child div:first-child {
+    order: 2;
+}
+ 
+#piece-s div:first-child div:nth-child(4), #piece-s div:first-child div:nth-child(5) {
+    order: 3;
+} */
+/* change order of parent tet-group rows */
+
+/* for Z piece, row-reverse order of last row, then correct order of 1st row, then move before last row */
+#piece-z div:last-child div:nth-child(3) {
+    order: -1;
+}
+
+#piece-z .tet-group:last-child {
+    order: -1;
+}
+
+#piece-z div:last-child {
+    flex-direction: row-reverse;
+}
+
