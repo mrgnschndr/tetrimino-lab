@@ -109,36 +109,52 @@
 /* change font colors to match each color */
 #tet-colors li:first-child {
     color: #EA3D1E;
+    border: solid #EA3D1E 3px;
 }
 
 #tet-colors li:nth-child(2) {
     color: #F69230;
+    border: solid #F69230 3px;
 }
 
 #tet-colors li:nth-child(3) {
     color: #FEF94C;
+    border: solid #FEF94C 3px;
 }
 
 #tet-colors li:nth-child(4) {
     color: #79AF3D;
+    border: solid #79AF3D 3px;
 }
 
 #tet-colors li:nth-child(5) {
     color: #51E2FC;
+    border: solid #51E2FC 3px;
 }
 
 #tet-colors li:nth-child(6) {
     color: #953693;
+    border: solid #953693 3px;
 }
 
 #tet-colors li:nth-child(7) {
     color: #F16EB9;
+    border: solid #F16EB9 3px;
 }
 
-/* remove bullet points, add bold font weight, & set up flexbox */
+/* remove bullet points, add bold font weight, & set up flexbox for aside */
 aside ul {
     list-style: none;
     font-weight: bold;
     display: flex;
     flex-direction: column;
+    width: 50%;
+    gap: 10px;
 }
+
+#tet-colors {
+    display: flex;
+    justify-content: center;
+}
+
+
