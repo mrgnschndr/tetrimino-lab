@@ -135,13 +135,10 @@
     color: #F16EB9;
 }
 
-/* remove bullet points & add bold font weight */
+/* remove bullet points, add bold font weight, & set up flexbox */
 aside ul {
     list-style: none;
     font-weight: bold;
-}
-/* set up flexbox */
-#tet-colors > ul {
     display: flex;
     flex-direction: column;
 }
