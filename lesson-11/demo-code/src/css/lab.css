@@ -192,3 +192,8 @@ aside > h2 {
 p, h2:not(aside > h2) {
     font-family: sans-serif;
 }
+
+/* Optional Deeper Learning Debug */
+.task-box p * {
+    margin: 0px;
+}
