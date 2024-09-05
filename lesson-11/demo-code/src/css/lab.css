@@ -157,4 +157,6 @@ aside ul {
     justify-content: center;
 }
 
-
+aside > h2 {
+    margin-bottom: 10px;
+}
