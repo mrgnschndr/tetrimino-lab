@@ -187,3 +187,8 @@ aside > h2 {
     margin-bottom: 10px;
 }
 
+
+/* Task 3: Revert custom font styling */
+p, h2:not(aside > h2) {
+    font-family: sans-serif;
+}
