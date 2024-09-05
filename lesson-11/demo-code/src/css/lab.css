@@ -106,7 +106,7 @@
 
 
 /* ASIDE SECTION */
-
+/* change font colors to match each color */
 #tet-colors li:first-child {
     color: #EA3D1E;
 }
@@ -133,4 +133,9 @@
 
 #tet-colors li:nth-child(7) {
     color: #F16EB9;
+}
+
+/* remove bullet points */
+aside ul {
+    list-style: none;
 }
